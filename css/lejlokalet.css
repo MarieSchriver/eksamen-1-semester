@@ -1,0 +1,57 @@
+/* Nulstil margener og padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Baggrund for hele siden */
+body {
+    background-color: #666;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling af navbar */
+.navbar {
+    background-color: #666; /* Mørkegrå baggrund */
+    padding: 1em;
+    position: sticky; /* Bliver synlig, når du scroller */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-menu {
+    list-style-type: none; /* Fjern punkter fra listen */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Laver en horisontal linje */
+    justify-content: center; /* Centrerer elementerne */
+}
+
+.navbar-menu li {
+    margin: 0 15px; /* Afstand mellem menupunkter */
+}
+
+.navbar-menu a {
+    text-decoration: none; /* Fjern understregning */
+    color: white; /* Hvid tekst */
+    font-size: 1.2em;
+    transition: color 0.3s; /* Glidende farveændring */
+}
+
+.navbar-menu a:hover {
+    color: #ff6600; /* Orange farve ved hover */
+}
+
+/* Eksempel styling til sektioner */
+section {
+    padding: 50px;
+    margin: 50px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
