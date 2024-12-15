@@ -76,6 +76,7 @@
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
+    
     }
 
     .lejlokaletbillede{
@@ -118,6 +119,35 @@
        justify-content: center;
        font-weight: bold;
        font-size: larger;
+       
+    }
+
+    .footer{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
+    }
+
+    .adresse{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
+    }
+
+    .åbningstider{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
+    }
+
+    .SoMe{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
     }
 }
 
