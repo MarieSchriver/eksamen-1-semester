@@ -60,14 +60,65 @@
     width: 50%;
     }
 
+    .kasketbillede-container{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
+    }
+
     .faelleskaberbillede{
         width: 50%;
+    }
+
+    .faelleskaberbillede-container{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
     }
 
     .lejlokaletbillede{
         width: 50%;
     }
+
+    .lejlokaletbillede-container{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
+    }
     
+
+    .merchlink{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        display: flex;
+       justify-content: center;
+       font-weight: bold;
+       font-size: larger;
+    }
+
+    .faellesskaberlink{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        display: flex;
+       justify-content: center;
+       font-weight: bold;
+       font-size: larger;
+    }
+
+    .lejlokaletlink{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        display: flex;
+       justify-content: center;
+       font-weight: bold;
+       font-size: larger;
+    }
 }
 
 /* iPad styling */
