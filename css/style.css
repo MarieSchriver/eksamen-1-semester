@@ -5,42 +5,88 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 391px) {
+    .logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    .burger-checkbox {
+        display: none;
+    }
+
+    .forsidebillede-container {
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
+    }
+    
+    img.forsidebillede {
+        width: 80%;
+        height: auto;
+    }
+    
+
+    h1{
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .tesktforsidetop{
+        text-align: justify;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+
+    h2{
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem; 
+    }
+
+    .tesktforsidebund{
+        text-align: justify;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .kasketbillede{
+    width: 50%;
+    }
+
+    .faelleskaberbillede{
+        width: 50%;
+    }
+
+    .lejlokaletbillede{
+        width: 50%;
+    }
+    
+}
+
+/* iPad styling */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS regler for iPads */
+}
+
+/* Styling for større skærme */
+@media screen and (min-width: 392px) {
+    img.forsidebillede {
+        width: 100%; /* Eksempelvis fuld bredde på større skærme */
+        height: auto;
+    }
+}
+
 /* Baggrund for hele siden */
 body {
     background-color: #666;
     font-family: Arial, sans-serif;
-}
-
-/* Styling af navbar */
-.navbar {
-    background-color: #666; /* Mørkegrå baggrund */
-    padding: 1em;
-    position: sticky; /* Bliver synlig, når du scroller */
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar-menu {
-    list-style-type: none; /* Fjern punkter fra listen */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Laver en horisontal linje */
-    justify-content: center; /* Centrerer elementerne */
-}
-
-.navbar-menu li {
-    margin: 0 15px; /* Afstand mellem menupunkter */
-}
-
-.navbar-menu a {
-    text-decoration: none; /* Fjern understregning */
-    color: white; /* Hvid tekst */
-    font-size: 1.2em;
-    transition: color 0.3s; /* Glidende farveændring */
-}
-
-.navbar-menu a:hover {
-    color: #ff6600; /* Orange farve ved hover */
 }
 
 /* Eksempel styling til sektioner */
@@ -49,9 +95,4 @@ section {
     margin: 50px 0;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-}
-
-h1 {
-    text-align: center;
-    color: white;
 }
