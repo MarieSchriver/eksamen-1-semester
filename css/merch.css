@@ -109,18 +109,38 @@ body {
     
     .imgkasket{
         width: 50%;
-       
 
+    }
+
+    .kasketsection{
+        display: flex;
+        justify-content: center;
+       background-color: #666;
+       border: none;
     }
 
     .imgtshirt{
         width: 50%;
     }
 
+    .tshirtsection{
+        display: flex;
+        justify-content: center;
+        background-color: #666;
+        border: none;
+    }
+
     .imgøldåse{
         width: 50%;
     }
 
+    .ølsection{
+        display: flex;
+        justify-content: center;
+        background-color: #666;
+        border: none;
+    }
+    
     .merchh1{
         color: #ff9000;
     }
