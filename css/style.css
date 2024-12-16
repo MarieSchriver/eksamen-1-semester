@@ -5,6 +5,37 @@
     box-sizing: border-box;
 }
 
+/* Generel footerbox styling */
+.footerbox {
+    display: grid; /* Aktiver grid for layout */
+    grid-template-columns: 1fr; /* Stak alle sektioner lodret */
+    gap: 1.5rem; /* Mellemrum mellem sektioner */
+    background-color: #ff9000; /* Baggrundsfarve */
+    padding: 1rem; /* Mindre padding */
+    color: white; /* Tekstfarve */
+    text-align: center; /* Centrer tekst og indhold */
+}
+
+/* Sektion styling */
+.adresse, .åbningstider, .SoMe {
+    font-size: 0.9rem; /* Reduceret tekststørrelse */
+    line-height: 1.2rem; /* Tættere linjeafstand */
+    margin: 0 auto; /* Centrer indholdet */
+    width: 90%; /* Begræns bredde for bedre læsbarhed */
+}
+
+/* Sociale Medier sektion */
+.SoMe {
+    display: flex;
+    flex-direction: column; /* Stabler logoerne lodret */
+    align-items: center; /* Centrerer logoerne */
+}
+
+.facebooklogo, .instagramlogo {
+    width: 40px; /* Mindre logo-størrelse til små skærme */
+    margin: 0.5rem 0; /* Mellemrum mellem logoerne */
+}
+
 @media screen and (max-width: 391px) {
     .logo {
         width: 15rem;
@@ -207,79 +238,28 @@ body {
        
     }
 
-    .footer{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+    section.footer{
+        background-color: #ff9000;
         border: none;
     }
 
-    .adresse{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+    .footerbox {
+        padding: 0.5rem; /* Mindre padding på meget små skærme */
+        gap: 1rem; /* Reducer afstand mellem sektioner */
+        background-color: #ff9000;
         border: none;
-        color: white;
-        font-weight: bold;
-        width: 80%; /* Sektionen fylder kun 50% af bredden */
-        height: 30%; /* Tilpas højden efter indholdet */
     }
 
-    .åbningstider{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+    .adresse, .åbningstider, .SoMe {
+        font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
+        line-height:2rem;
+        width: 100%; /* Sektionerne fylder hele bredden */
+        background-color: #ff9000;
         border: none;
-        color: white;
-        font-weight: bold;
-        
     }
 
-    .SoMe{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        justify-content: center;
-        background-color: #666;
-        border: none;
-        color: white;
-        font-weight: bold;
-        width: 50%; /* Sektionen fylder kun 50% af bredden */
-        height: auto; /* Tilpas højden efter indholdet */
-        
-    }
-
-    section.adresse{
-        padding-left: 6rem;
-        line-height: 1.5rem;
-    }
-
-    section.SoMe {
-        padding-left: 8rem;
-    }
-
-section.åbningstider{
-    padding-left: 8rem;
-    line-height: 1.5rem;
-}
-
-    .footerbox{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        justify-content: center;
-        background-color: #666;
-        border: none; 
-        color: white;
-    }
-
-    .instagramlogo{
-        width: 75%;
-        height: auto;
-    }
-
-    .facebooklogo{
-        width: 55%;
-        height: auto;
-        padding-top: 2rem;
+    .facebooklogo, .instagramlogo {
+        width: 35px; /* Reducer logo-størrelsen yderligere */
     }
 }
 
