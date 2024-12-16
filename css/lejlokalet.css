@@ -110,6 +110,19 @@ h1{
     text-align: justify;
     color: white;
 }
+
+.imglokale{
+    width: 50%;
+   
+}
+
+.imglokalesection{
+display: flex;
+justify-content: center;
+padding-bottom: 2rem;
+
+}
+
 .footer{
     display: grid; /* Aktiverer CSS Grid */
     place-items: center; /* Centrerer både vandret og lodret */
