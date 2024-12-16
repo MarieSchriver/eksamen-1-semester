@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Anton", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+
 /* Generel footerbox styling */
 .footerbox {
     display: grid; /* Aktiver grid for layout */
@@ -258,8 +266,12 @@ body {
         border: none;
     }
 
-    .facebooklogo, .instagramlogo {
+    .facebooklogo {
         width: 35px; /* Reducer logo-størrelsen yderligere */
+    }
+
+    .instagramlogo{
+        width: 55px; /* Reducer logo-størrelsen yderligere */
     }
 }
 
