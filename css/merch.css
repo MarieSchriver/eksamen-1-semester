@@ -151,6 +151,8 @@ nav.navbar{
 
     .merchh1{
         color: #ff9000;
+       text-align: center;
+
     }
 
     h2{
@@ -265,7 +267,3 @@ section {
     border: 1px solid #ddd;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-}

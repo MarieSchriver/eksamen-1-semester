@@ -10,27 +10,26 @@
 </head>
 <body>
     <header>
-        <img src="fotos/mikrofonlogo.webp" alt="logo">
+        <img src="fotos/mikrofonlogo.webp" alt="logo" class="logo"> <!--logoet i toppen af siden -->
+        
     </header>
-    <nav class="navbar">
-        <ul class="navbar-menu">
-            <li><a href="merch.html">Merch</a></li>
-            <li><a href="faellesskaber.html">Fællesskaber</a></li>
-            <li><a href="lejlokalet.html">Lej Lokalet</a></li>
-        </ul>
-    </nav>
-    <section id="merch">
-        <h1>Merch</h1>
-        <p>Indhold om merchandise.</p>
-    </section>
-    <section id="faellesskaber">
-        <h1>Fællesskaber</h1>
-        <p>Indhold om fællesskaber.</p>
-    </section>
-    <section id="lej-lokalet">
-        <h1>Lej Lokalet</h1>
-        <p>Indhold om at leje lokalet.</p>
-    </section>
+    <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+
+<!-- Label fungerer som burgerikon og kontrollerer checkboxen -->
+<label for="burger-toggle" class="burger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+</label>
+
+<nav class="navbar"> <!-- navbaren bliver lavet her -->
+    <!-- Menuen, som vises, når checkboxen er markeret -->
+    <ul class="navbar-menu">
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="faellesskaber.html">Fællesskaber</a></li>
+        <li><a href="lejlokalet.html">Lej Lokalet</a></li>
+    </ul>
+</nav>
 
 <h1>
  Lej lokalet
@@ -40,33 +39,40 @@
 Med sin rå, autentiske atmosfære og professionelle faciliteter er lokalet ideelt til både intime sammenkomster og større arrangementer. Den tekniske opsætning gør det muligt at skabe en helt særlig stemning, hvad enten det er med musik, lys eller dekorationer. Radar er placeret centralt i Aarhus og let tilgængeligt for dine gæster, hvilket gør det nemt at samle venner, familie eller kolleger til en uforglemmelig dag. Ved at vælge Radar som dit eventsted får du ikke blot en fantastisk location, men også muligheden for at støtte et sted, der er dybt engageret i det lokale kultur- og musikliv.</p>
 
 
-    <footer>
-      <section class="adresse">
-          <p>Adresse:
-              Karen Wegeners Gade 6, 8000 Aarhus
-              
-              Telefon:
-              86 76 03 44</p>
-      </section>
-      <section class="åbningstider">
-      <p>
-      Åbningstider:
-      Mandag: Lukket
-      Tirsdag: Lukket
-      Onsdag: Lukket
-      Torsdag: 19-23.30
-      Fredag: 19-23.30
-      Lørdag: 19-23.30
-      Søndag: Lukket
-      </p>
-      </section>
-  
-      <section class="SoMe">
-          <p>Sociale Medier</p>
-          <img src="fotos/facebook.webp" alt="facebooklogo">
-          <img src="fotos/instagram.webp" alt="instagramlogo">
-      </section>
-  
-      </footer>
+<footer> <!--footeren starter her-->
+    <section class="footerbox">
+        <section class="footer">
+            <section class="adresse">
+            <p>Adresse:
+                Karen Wegeners Gade 6, 8000 Aarhus
+                
+                Telefon:
+                86 76 03 44</p>
+            </section> 
+        </section>
+    
+      
+        <section class="åbningstider">
+            <p>
+            Åbningstider:
+            Mandag: Lukket
+            Tirsdag: Lukket
+            Onsdag: Lukket
+            Torsdag: 19-23.30
+            Fredag: 19-23.30
+            Lørdag: 19-23.30
+            Søndag: Lukket
+            </p>
+        </section>
+    
+        <section class="SoMe">
+            <p>Sociale Medier:</p>
+            <img class="facebooklogo" src="fotos/facebook.webp" alt="facebooklogo">
+            <img class="instagramlogo" src="fotos/instagram.webp" alt="instagramlogo">
+        </section>
+    </section>
+    
+    
+    </footer>
     </body>
     </html>
