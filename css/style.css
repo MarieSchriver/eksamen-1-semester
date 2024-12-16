@@ -11,14 +11,99 @@
         height: auto;
     }
 
-    .burger-checkbox {
-        display: none;
+    body{
+        background: linear-gradient(to bottom, #666, black);
+
     }
+
+    /* Generelle indstillinger */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Skjul checkboxen */
+.burger-checkbox {
+    display: none;
+}
+
+/* Styling af burgerikon */
+.burger {
+    position: fixed;
+    top: 3rem;
+    right: 20px; /* Placeres i højre side */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.burger .line {
+    width: 100%;
+    height: 4px;
+    background-color: #ff9000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+   
+}
+
+/* Skjult menu som standard */
+.navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Skjules uden for skærmen */
+    width: 200px;
+    height: 100vh;
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+}
+
+/* Menu punkter */
+.navbar-menu li {
+    margin: 20px 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Vis menuen, når checkboxen er markeret */
+.burger-checkbox:checked + .burger + .navbar-menu {
+    right: 0; /* Flyt menuen ind i skærmen */
+}
+
+/* Burger-animation ved åbning */
+.burger-checkbox:checked + .burger .line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+
 
     .forsidebillede-container {
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+        background-color: #565656;
         border: none;
     }
     
@@ -63,7 +148,7 @@
     .kasketbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+        background-color: #414141;
         border: none;
     }
 
@@ -74,7 +159,7 @@
     .faelleskaberbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+        background-color: #393939;
         border: none;
     
     }
@@ -86,7 +171,7 @@
     .lejlokaletbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+        background-color: #2F2F2F;
         border: none;
     }
     
@@ -134,6 +219,10 @@
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
+        color: white;
+        font-weight: bold;
+        width: 80%; /* Sektionen fylder kun 50% af bredden */
+        height: 30%; /* Tilpas højden efter indholdet */
     }
 
     .åbningstider{
@@ -141,13 +230,56 @@
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
+        color: white;
+        font-weight: bold;
+        
     }
 
     .SoMe{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
+        justify-content: center;
         background-color: #666;
         border: none;
+        color: white;
+        font-weight: bold;
+        width: 50%; /* Sektionen fylder kun 50% af bredden */
+        height: auto; /* Tilpas højden efter indholdet */
+        
+    }
+
+    section.adresse{
+        padding-left: 6rem;
+        line-height: 1.5rem;
+    }
+
+    section.SoMe {
+        padding-left: 8rem;
+    }
+
+section.åbningstider{
+    padding-left: 8rem;
+    line-height: 1.5rem;
+}
+
+    .footerbox{
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        justify-content: center;
+        background-color: #666;
+        border: none; 
+        color: white;
+    }
+
+    .instagramlogo{
+        width: 75%;
+        height: auto;
+    }
+
+    .facebooklogo{
+        width: 55%;
+        height: auto;
+        padding-top: 2rem;
     }
 }
 
