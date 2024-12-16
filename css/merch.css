@@ -53,6 +53,10 @@ body {
    
 }
 
+nav.navbar{
+    background-color: #5D5D5D;
+}
+
 /* Skjult menu som standard */
 .navbar-menu {
     position: fixed;
@@ -115,7 +119,7 @@ body {
     .kasketsection{
         display: flex;
         justify-content: center;
-       background-color: #666;
+       background-color: #585858;
        border: none;
     }
 
@@ -126,7 +130,7 @@ body {
     .tshirtsection{
         display: flex;
         justify-content: center;
-        background-color: #666;
+        background-color: #4B4B4B;
         border: none;
     }
 
@@ -137,10 +141,10 @@ body {
     .ølsection{
         display: flex;
         justify-content: center;
-        background-color: #666;
+        background-color: #3D3D3D;
         border: none;
     }
-    
+
     .merchh1{
         color: #ff9000;
     }
