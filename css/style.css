@@ -492,6 +492,7 @@ body {
         gap: 1rem; /* Reducer afstand mellem sektioner */
         background-color: #ff9000;
         border: none;
+        color: white !important;
     }
 
     .adresse, .åbningstider, .SoMe {
