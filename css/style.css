@@ -275,6 +275,8 @@ body {
     }
 }
 
+
+
 /* iPad styling */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* CSS regler for iPads */
@@ -482,6 +484,7 @@ body {
     section.footer{
         background-color: #ff9000;
         border: none;
+        color: white;
     }
 
     .footerbox {
@@ -507,6 +510,13 @@ body {
         width: 55px; /* Reducer logo-størrelsen yderligere */
     }
 }
+
+
+
+
+
+
+
 
 /* Styling for større skærme */
 @media screen and (min-width: 392px) {

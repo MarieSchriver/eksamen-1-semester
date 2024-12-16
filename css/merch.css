@@ -239,8 +239,190 @@ section.åbningstider{
 
 
 
+/* iPad styling */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS regler for iPads */
+    .logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    body{
+        background: linear-gradient(to bottom, #666, black);
+
+    }
+
+    /* Generelle indstillinger */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Skjul checkboxen */
+.burger-checkbox {
+    display: none;
+}
+
+/* Styling af burgerikon */
+.burger {
+    position: fixed;
+    top: 3rem;
+    right: 20px; /* Placeres i højre side */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.burger .line {
+    width: 100%;
+    height: 4px;
+    background-color: #ff9000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+   
+}
+
+nav.navbar{
+    background-color: #5D5D5D;
+}
+
+/* Skjult menu som standard */
+.navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Skjules uden for skærmen */
+    width: 200px;
+    height: 100vh;
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+}
+
+/* Menu punkter */
+.navbar-menu li {
+    margin: 20px 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-menu a:hover {
+    color: #ff6600; /* Orange farve ved hover */
+}
+
+.burger-checkbox:checked ~ .navbar .navbar-menu {
+    right: 0; /* Flyt menuen ind i skærmen */
+}
 
 
+/* Burger-animation ved åbning */
+.burger-checkbox:checked + .burger .line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+ .forsidebillede-container {
+    display: grid; /* Aktiverer CSS Grid */
+    place-items: center; /* Centrerer både vandret og lodret */
+    background-color: #565656;
+    border: none;
+    }
+    
+    .imgkasket{
+        width: 50%;
+
+    }
+
+    .kasketsection{
+        display: flex;
+        justify-content: center;
+       background-color: #585858;
+       border: none;
+    }
+
+    .imgtshirt{
+        width: 50%;
+    }
+
+    .tshirtsection{
+        display: flex;
+        justify-content: center;
+        background-color: #4B4B4B;
+        border: none;
+    }
+
+    .imgøldåse{
+        width: 50%;
+    }
+
+    .ølsection{
+        display: flex;
+        justify-content: center;
+        background-color: #3D3D3D;
+        border: none;
+    }
+
+    .merchh1{
+        color: #ff9000;
+       text-align: center;
+
+    }
+
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-top:2rem ;
+    }
+
+    section.footer{
+        background-color: #ff9000;
+        border: none;
+    }
+
+    .footerbox {
+        padding: 0.5rem; /* Mindre padding på meget små skærme */
+        gap: 1rem; /* Reducer afstand mellem sektioner */
+        background-color: #ff9000;
+        border: none;
+    }
+
+    .adresse, .åbningstider, .SoMe {
+        font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
+        line-height:2rem;
+        width: 100%; /* Sektionerne fylder hele bredden */
+        background-color: #ff9000;
+        border: none;
+    }
+
+    .facebooklogo {
+        width: 35px; /* Reducer logo-størrelsen yderligere */
+    }
+
+    .instagramlogo{
+        width: 55px; /* Reducer logo-størrelsen yderligere */
+    }
+}
 
 
 
