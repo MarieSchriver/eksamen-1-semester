@@ -80,10 +80,10 @@ body {
     font-size: 1.5rem;
 }
 
-/* Vis menuen, når checkboxen er markeret */
-.burger-checkbox:checked + .burger + .navbar-menu {
+.burger-checkbox:checked ~ .navbar .navbar-menu {
     right: 0; /* Flyt menuen ind i skærmen */
 }
+
 
 /* Burger-animation ved åbning */
 .burger-checkbox:checked + .burger .line:nth-child(1) {
