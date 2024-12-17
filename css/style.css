@@ -318,8 +318,8 @@ body {
 }
 
 .burger .line {
-    width: 100%;
-    height: 4px;
+    width: 120%;
+    height: 5px;
     background-color: #ff9000;
     border-radius: 2px;
     transition: all 0.3s ease;
@@ -374,8 +374,6 @@ body {
 }
 
 
-
-
     .forsidebillede-container {
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
@@ -394,12 +392,15 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
+        color: #ff9000
+        ;
     }
     
     .tesktforsidetop{
         text-align: justify;
         padding-left: 3rem;
         padding-right: 3rem;
+        color: white;
 
     }
 
@@ -408,6 +409,7 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem; 
+        color: white;
     }
 
     .tesktforsidebund{
@@ -454,7 +456,7 @@ body {
 
     .merchlink{
         text-decoration: none;
-        color: black;
+        color: white;
         text-align: center;
         display: flex;
        justify-content: center;
@@ -464,7 +466,7 @@ body {
 
     .faellesskaberlink{
         text-decoration: none;
-        color: black;
+        color: white;
         text-align: center;
         display: flex;
        justify-content: center;
@@ -474,7 +476,7 @@ body {
 
     .lejlokaletlink{
         text-decoration: none;
-        color: black;
+        color: white;
         text-align: center;
         display: flex;
        justify-content: center;
