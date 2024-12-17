@@ -572,8 +572,7 @@ body {
         display: flex;
        justify-content: center;
        font-weight: bold;
-       font-size: x-large;
-       
+       font-size: x-large;       
     }
 
     section.footer{
@@ -619,66 +618,67 @@ body {
     }
 
     /* Generelle indstillinger */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #666;
-}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #666;
+    }
 
-.burger {
-    display: none; /* Skjul burgerikonet */
-}
+    .burger {
+        display: none; /* Skjul burgerikonet */
+    }
 
-.navbar {
-    display: flex; /* Vis navbar som standard */
-    flex-direction: column; /* Lodret layout */
-    align-items: flex-end; /* Juster til højre */
-}
+    .navbar {
+        display: flex; /* Vis navbar som standard */
+        flex-direction: column; /* Lodret layout */
+        align-items: flex-end; /* Juster til højre */
+    }
 
-.navbar-menu {
-    display: block; /* Standard menuvisning */
-}
+    .navbar-menu {
+        display: block; /* Standard menuvisning */
+    }
 
- .navbar-menu li a {
-    font-size: 3rem; /* Forøg skriftstørrelsen */
-    margin-right: 5rem;
-}
+    .navbar-menu li a {
+        font-size: 3rem; /* Forøg skriftstørrelsen */
+        margin-right: 5rem;
+    }
+    
+    .forsidebilledeogtekst {
+        display: flex; /* Aktivér flex layout */
+        align-items: center; /* Juster lodret */
+        gap: 0.5rem; /* Afstand mellem elementerne */
+    }
 
     .forsidebillede-container {
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
-        border: none;
+        flex: 1; /* Tildel billedet plads til at tilpasse sig */
+        padding-right: 8rem;
     }
-    
+
     img.forsidebillede {
-        width: 40%;
+        width: 110%; /* Billedet fylder sin container */
         height: auto;
+        max-width: 550px; /* Begræns maks. bredde */
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-        
     }
-    
 
-    h1{
-        text-align: center;
-        padding-left: 2rem;
-        padding-right: 44rem;
-        padding-bottom: 2rem;
-        color: #ff9000;
+    .tesktforsidetop,
+    h1 {
+        flex: 2; /* Giv teksten mere plads end billedet */
+    }
+
+    h1 {
         font-size: 4rem;
-
+        color: #ff9000;
+        padding-left: 3rem;
+        padding-right: 44rem;
     }
-    
-    .tesktforsidetop{
-        text-align: justify;
-        padding-left: 5rem;
-        padding-right: 47rem;
-        color: white;
+
+    .tesktforsidetop {
         font-size: 1.5rem;
         line-height: 2rem;
-        padding-bottom: 4rem;
-        padding-top: 3rem;
-
+        color: white;
+        padding-left: 3rem;
+        padding-right: 15rem;
     }
 
     h2{
@@ -700,76 +700,88 @@ body {
         font-size: 1.5rem;
     }
 
-    .kasketbillede{
-    width: 50%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    .kasketogfællesskaboglejlokaletsection {
+        display: flex;
+        justify-content: space-between; /* Placerer sektionerne med mellemrum */
+        align-items: flex-start; /* Juster elementerne øverst */
+        gap: 2rem; /* Afstand mellem sektionerne */
     }
 
-    .kasketbillede-container{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
-        border: none;
+    /* Container for hvert billede og link */
+    .kasketbillede-container,
+    .faelleskaberbillede-container,
+    .lejlokaletbillede-container {
+        display: flex;
+        flex-direction: column; /* Placer linket over billedet */
+        align-items: center; /* Centrerer både link og billede */
+        text-align: center; /* Centrerer teksten (linket) */
     }
 
-    .faelleskaberbillede{
+    /* Billederne */
+    .kasketbillede,
+    .faelleskaberbillede,
+    .lejlokaletbillede {
+        width: 100%; /* Gør billederne responsivt */
+        max-width: 500px; /* Begræns størrelsen på billederne */
+        height: auto;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Links */
+    .linksforside {
+        display: flex; /* Sørger for at linksene står på en række */
+        justify-content: space-between; /* Placerer linkene med lige afstand */
+        gap: 2rem; /* Afstand mellem linkene */
+        text-align: center; /* Centrerer teksten i containeren */
+    }
+
+    .merchlink,
+    .faellesskaberlink,
+    .lejlokaletlink {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 0; /* Fjern margin-bottom */
+    }
+
+    .kasketbillede {
         width: 50%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .faelleskaberbillede-container{
+    .kasketbillede-container {
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
-    
     }
 
-    .lejlokaletbillede{
+    .faelleskaberbillede {
         width: 50%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .lejlokaletbillede-container{
+    .faelleskaberbillede-container {
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
     }
-    
 
-    .merchlink{
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        display: flex;
-       justify-content: center;
-       font-weight: bold;
-       font-size: x-large;
+    .lejlokaletbillede {
+        width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .faellesskaberlink{
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        display: flex;
-       justify-content: center;
-       font-weight: bold;
-       font-size: x-large;
+    .lejlokaletbillede-container {
+        display: grid; /* Aktiverer CSS Grid */
+        place-items: center; /* Centrerer både vandret og lodret */
+        background-color: #666;
+        border: none;
     }
 
-    .lejlokaletlink{
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        display: flex;
-       justify-content: center;
-       font-weight: bold;
-       font-size: x-large;
-       
-    }
-
-    section.footer{
+    section.footer {
         background-color: #ff9000;
         border: none;
         color: white;
@@ -782,12 +794,12 @@ body {
         border: none;
         color: white !important;
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
     }
 
     .adresse, .åbningstider, .SoMe {
         font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
-        line-height:2rem;
+        line-height: 2rem;
         width: 100%; /* Sektionerne fylder hele bredden */
         background-color: #ff9000;
         border: none;
@@ -796,14 +808,14 @@ body {
         text-align: center; /* Centrer teksten i elementerne */
         padding: 10px; /* Gør elementerne mere tydelige */
         padding-left: 8rem;
-        
     }
 
     .facebooklogo {
         width: 35px; /* Reducer logo-størrelsen yderligere */
     }
 
-    .instagramlogo{
+    .instagramlogo {
         width: 55px; /* Reducer logo-størrelsen yderligere */
     }
 }
+
