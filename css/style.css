@@ -50,11 +50,6 @@ body {
         height: auto;
     }
 
-    body{
-        background: linear-gradient(to bottom, #666, black);
-
-    }
-
     /* Generelle indstillinger */
 body {
     margin: 0;
@@ -142,7 +137,7 @@ body {
     .forsidebillede-container {
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #565656;
+        background-color: #666;
         border: none;
     }
     
@@ -182,35 +177,38 @@ body {
 
     .kasketbillede{
     width: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .kasketbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #414141;
+        background-color: #666;
         border: none;
     }
 
     .faelleskaberbillede{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .faelleskaberbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #393939;
+        background-color: #666;
         border: none;
     
     }
 
     .lejlokaletbillede{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .lejlokaletbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #2F2F2F;
+        background-color: #666;
         border: none;
     }
     
@@ -284,11 +282,6 @@ body {
     .logo {
         width: 25rem;
         height: auto;
-    }
-
-    body{
-        background: linear-gradient(to bottom, #666, black);
-
     }
 
     /* Generelle indstillinger */
@@ -377,13 +370,14 @@ body {
     .forsidebillede-container {
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #565656;
+        background-color: #666;
         border: none;
     }
     
     img.forsidebillede {
         width: 60%;
         height: auto;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
     
 
@@ -417,39 +411,43 @@ body {
         padding-left: 3rem;
         padding-right: 3rem;
         padding-bottom: 3rem;
+        color: white;
     }
 
     .kasketbillede{
     width: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .kasketbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #414141;
+        background-color: #666;
         border: none;
     }
 
     .faelleskaberbillede{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .faelleskaberbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #393939;
+        background-color: #666;
         border: none;
     
     }
 
     .lejlokaletbillede{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .lejlokaletbillede-container{
         display: grid; /* Aktiverer CSS Grid */
         place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #2F2F2F;
+        background-color: #666;
         border: none;
     }
     
@@ -461,7 +459,7 @@ body {
         display: flex;
        justify-content: center;
        font-weight: bold;
-       font-size: larger;
+       font-size: x-large;
     }
 
     .faellesskaberlink{
@@ -471,7 +469,7 @@ body {
         display: flex;
        justify-content: center;
        font-weight: bold;
-       font-size: larger;
+       font-size: x-large;
     }
 
     .lejlokaletlink{
@@ -481,7 +479,7 @@ body {
         display: flex;
        justify-content: center;
        font-weight: bold;
-       font-size: larger;
+       font-size: x-large;
        
     }
 
