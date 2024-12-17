@@ -521,7 +521,7 @@ body {
     /* CSS regler for computer */
 
     .logo {
-        width: 25rem;
+        width: 40rem;
         height: auto;
     }
 
@@ -553,11 +553,12 @@ body {
 }
 
 .burger .line {
-    width: 120%;
-    height: 5px;
+    width: 170%;
+    height: 6px;
     background-color: #ff9000;
     border-radius: 2px;
     transition: all 0.3s ease;
+    margin-right: 4rem;
    
 }
 
@@ -617,7 +618,7 @@ body {
     }
     
     img.forsidebillede {
-        width: 60%;
+        width: 40%;
         height: auto;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
@@ -628,15 +629,20 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
-        color: #ff9000
-        ;
+        color: #ff9000;
+        font-size: 4rem;
+
     }
     
     .tesktforsidetop{
         text-align: justify;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
         color: white;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 4rem;
+        padding-top: 3rem;
 
     }
 
@@ -645,15 +651,18 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem; 
-        color: white;
+        color: #ff9000;
+        padding-top: 5rem;
+        font-size: 2rem;
     }
 
     .tesktforsidebund{
         text-align: justify;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
         padding-bottom: 3rem;
         color: white;
+        font-size: 1.5rem;
     }
 
     .kasketbillede{
