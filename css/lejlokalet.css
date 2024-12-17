@@ -239,9 +239,10 @@ line-height: 1.5rem;
         height: auto;
     }
 
-    body{
-        background: linear-gradient(to bottom, #666, black);
-
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #666;
     }
 
     /* Generelle indstillinger */
@@ -330,11 +331,12 @@ h1{
     padding: 2rem;
     text-align: justify;
     color: white;
+    line-height: 1.5rem;
 }
 
 .imglokale{
     width: 50%;
-   
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .imglokalesection{

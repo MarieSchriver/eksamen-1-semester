@@ -5,17 +5,42 @@
     box-sizing: border-box;
 }
 
+/* Generel footerbox styling */
+.footerbox {
+    display: grid; /* Aktiver grid for layout */
+    grid-template-columns: 1fr; /* Stak alle sektioner lodret */
+    gap: 1.5rem; /* Mellemrum mellem sektioner */
+    background-color: #ff9000; /* Baggrundsfarve */
+    padding: 1rem; /* Mindre padding */
+    color: white; /* Tekstfarve */
+    text-align: center; /* Centrer tekst og indhold */
+}
+
+/* Sektion styling */
+.adresse, .åbningstider, .SoMe {
+    font-size: 0.9rem; /* Reduceret tekststørrelse */
+    line-height: 1.2rem; /* Tættere linjeafstand */
+    margin: 0 auto; /* Centrer indholdet */
+    width: 90%; /* Begræns bredde for bedre læsbarhed */
+}
+
+/* Sociale Medier sektion */
+.SoMe {
+    display: flex;
+    flex-direction: column; /* Stabler logoerne lodret */
+    align-items: center; /* Centrerer logoerne */
+}
+
+.facebooklogo, .instagramlogo {
+    width: 40px; /* Mindre logo-størrelse til små skærme */
+    margin: 0.5rem 0; /* Mellemrum mellem logoerne */
+}
 
 @media screen and (max-width: 391px){
 
     .logo {
         width: 15rem;
         height: auto;
-    }
-
-    body{
-        background: linear-gradient(to bottom, #666, black);
-
     }
 
     /* Generelle indstillinger */
@@ -117,7 +142,7 @@ nav.navbar{
     
     .imgkasket{
         width: 50%;
-
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .kasketsection{
@@ -129,6 +154,7 @@ nav.navbar{
 
     .imgtshirt{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .tshirtsection{
@@ -140,6 +166,7 @@ nav.navbar{
 
     .imgøldåse{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .ølsection{
@@ -248,11 +275,6 @@ section.åbningstider{
         height: auto;
     }
 
-    body{
-        background: linear-gradient(to bottom, #666, black);
-
-    }
-
     /* Generelle indstillinger */
 body {
     margin: 0;
@@ -337,41 +359,43 @@ body {
  .forsidebillede-container {
     display: grid; /* Aktiverer CSS Grid */
     place-items: center; /* Centrerer både vandret og lodret */
-    background-color: #565656;
+    background-color: #666;
     border: none;
     }
     
     .imgkasket{
         width: 50%;
-
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .kasketsection{
         display: flex;
         justify-content: center;
-       background-color: #585858;
+       background-color: #666;
        border: none;
     }
 
     .imgtshirt{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .tshirtsection{
         display: flex;
         justify-content: center;
-        background-color: #4B4B4B;
+        background-color: #666;
         border: none;
     }
 
     .imgøldåse{
         width: 50%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .ølsection{
         display: flex;
         justify-content: center;
-        background-color: #3D3D3D;
+        background-color: #666;
         border: none;
     }
 
@@ -385,11 +409,13 @@ body {
         display: flex;
         justify-content: center;
         padding-top:2rem ;
+        color: white;
     }
 
     section.footer{
         background-color: #ff9000;
         border: none;
+        color: white;
     }
 
     .footerbox {
@@ -397,6 +423,7 @@ body {
         gap: 1rem; /* Reducer afstand mellem sektioner */
         background-color: #ff9000;
         border: none;
+        color: white !important;
     }
 
     .adresse, .åbningstider, .SoMe {

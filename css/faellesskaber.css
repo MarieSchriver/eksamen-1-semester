@@ -44,15 +44,11 @@
         height: auto;
     }
 
-    body{
-        background: linear-gradient(to bottom, #666, black);
-
-    }
-
     /* Generelle indstillinger */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #666;
 }
 
 /* Skjul checkboxen */
@@ -253,15 +249,11 @@ line-height: 1.5rem;
         height: auto;
     }
 
-    body{
-        background: linear-gradient(to bottom, #666, black);
-
-    }
-
     /* Generelle indstillinger */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #666;
 }
 
 /* Skjul checkboxen */
@@ -343,6 +335,7 @@ body {
 h1{
     text-align: center;
     color: #ff9000;
+    padding-bottom: 3rem
 }
 
 h2{
@@ -355,25 +348,26 @@ h2{
 .kvinde{
     text-align: justify;
     color: white;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .mand{
     text-align: justify;
     color: white;
-    padding: 1rem; 
+    padding: 3rem; 
 }
 
 .girls{
     text-align: justify;
     color: white;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .unge{
     text-align: justify;
     color: white;
-    padding: 1rem;
+    padding: 3rem;
+    padding-bottom: 4rem;
 }
 
 
