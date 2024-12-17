@@ -287,10 +287,6 @@ body {
    
 }
 
-nav.navbar{
-    background-color: #5D5D5D;
-}
-
 /* Skjult menu som standard */
 .navbar-menu {
     position: fixed;
@@ -320,10 +316,6 @@ nav.navbar{
     font-size: 1.5rem;
 }
 
-.navbar-menu a:hover {
-    color: #ff6600; /* Orange farve ved hover */
-}
-
 .burger-checkbox:checked ~ .navbar .navbar-menu {
     right: 0; /* Flyt menuen ind i skærmen */
 }
@@ -341,7 +333,6 @@ nav.navbar{
 .burger-checkbox:checked + .burger .line:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
 }
-
  .forsidebillede-container {
     display: grid; /* Aktiverer CSS Grid */
     place-items: center; /* Centrerer både vandret og lodret */

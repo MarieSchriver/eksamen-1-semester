@@ -12,26 +12,23 @@
 </head>
 <body>
     <header>
-        <img src="fotos/mikrofonlogo.webp" alt="logo" class="logo"> <!--logoet i toppen af siden -->
-        
+        <a href="index.html">
+            <img src="fotos/mikrofonlogo.webp" alt="logo" class="logo">
+        </a>        
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <label for="burger-toggle" class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li><a href="merch.html">Merch</a></li>
+                <li><a href="faellesskaber.html">Fællesskaber</a></li>
+                <li><a href="lejlokalet.html">Lej Lokalet</a></li>
+            </ul>
+        </nav>
     </header>
-    <input type="checkbox" id="burger-toggle" class="burger-checkbox">
-
-<!-- Label fungerer som burgerikon og kontrollerer checkboxen -->
-<label for="burger-toggle" class="burger">
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line"></span>
-</label>
-
-<nav class="navbar"> <!-- navbaren bliver lavet her -->
-    <!-- Menuen, som vises, når checkboxen er markeret -->
-    <ul class="navbar-menu">
-        <li><a href="merch.html">Merch</a></li>
-        <li><a href="faellesskaber.html">Fællesskaber</a></li>
-        <li><a href="lejlokalet.html">Lej Lokalet</a></li>
-    </ul>
-</nav>
 
     <h1>Velkommen til Radar – Din Indgang til Kulturoplevelser</h1>
 
@@ -95,8 +92,7 @@
         <img class="instagramlogo" src="fotos/instagram-logo.webp" alt="instagramlogo">
     </section>
 </section>
-
-
 </footer>
+
 </body>
 </html>

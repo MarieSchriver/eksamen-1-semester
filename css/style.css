@@ -282,7 +282,7 @@ body {
     /* CSS regler for iPads */
 
     .logo {
-        width: 15rem;
+        width: 25rem;
         height: auto;
     }
 
@@ -372,6 +372,8 @@ body {
 .burger-checkbox:checked + .burger .line:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
 }
+
+
 
 
     .forsidebillede-container {

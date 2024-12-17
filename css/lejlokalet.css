@@ -7,6 +7,37 @@
     box-sizing: border-box;
 }
 
+/* Generel footerbox styling */
+.footerbox {
+    display: grid; /* Aktiver grid for layout */
+    grid-template-columns: 1fr; /* Stak alle sektioner lodret */
+    gap: 1.5rem; /* Mellemrum mellem sektioner */
+    background-color: #ff9000; /* Baggrundsfarve */
+    padding: 1rem; /* Mindre padding */
+    color: white; /* Tekstfarve */
+    text-align: center; /* Centrer tekst og indhold */
+}
+
+/* Sektion styling */
+.adresse, .åbningstider, .SoMe {
+    font-size: 0.9rem; /* Reduceret tekststørrelse */
+    line-height: 1.2rem; /* Tættere linjeafstand */
+    margin: 0 auto; /* Centrer indholdet */
+    width: 90%; /* Begræns bredde for bedre læsbarhed */
+}
+
+/* Sociale Medier sektion */
+.SoMe {
+    display: flex;
+    flex-direction: column; /* Stabler logoerne lodret */
+    align-items: center; /* Centrerer logoerne */
+}
+
+.facebooklogo, .instagramlogo {
+    width: 40px; /* Mindre logo-størrelse til små skærme */
+    margin: 0.5rem 0; /* Mellemrum mellem logoerne */
+}
+
 @media screen and (max-width: 391px) {
     .logo {
         width: 15rem;
@@ -197,4 +228,151 @@ line-height: 1.5rem;
     height: auto;
     padding-top: 2rem;
 }
+}
+
+/* iPad styling */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS regler for iPads */
+
+    .logo {
+        width: 25rem;
+        height: auto;
+    }
+
+    body{
+        background: linear-gradient(to bottom, #666, black);
+
+    }
+
+    /* Generelle indstillinger */
+/* Skjul checkboxen */
+.burger-checkbox {
+    display: none;
+}
+
+/* Styling af burgerikon */
+.burger {
+    position: fixed;
+    top: 3rem;
+    right: 20px; /* Placeres i højre side */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.burger .line {
+    width: 100%;
+    height: 4px;
+    background-color: #ff9000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+   
+}
+
+/* Skjult menu som standard */
+.navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Skjules uden for skærmen */
+    width: 200px;
+    height: 100vh;
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+}
+
+/* Menu punkter */
+.navbar-menu li {
+    margin: 20px 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.burger-checkbox:checked ~ .navbar .navbar-menu {
+    right: 0; /* Flyt menuen ind i skærmen */
+}
+
+
+/* Burger-animation ved åbning */
+.burger-checkbox:checked + .burger .line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+h1{
+    text-align: center;
+    color: #ff9000;
+}
+
+.tekstlejlokalet{
+    padding: 2rem;
+    text-align: justify;
+    color: white;
+}
+
+.imglokale{
+    width: 50%;
+   
+}
+
+.imglokalesection{
+display: flex;
+justify-content: center;
+padding-bottom: 2rem;
+
+}
+
+    
+
+    section.footer{
+        background-color: #ff9000;
+        border: none;
+        color: white;
+    }
+
+    .footerbox {
+        padding: 0.5rem; /* Mindre padding på meget små skærme */
+        gap: 1rem; /* Reducer afstand mellem sektioner */
+        background-color: #ff9000;
+        border: none;
+        color: white !important;
+    }
+
+    .adresse, .åbningstider, .SoMe {
+        font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
+        line-height:2rem;
+        width: 100%; /* Sektionerne fylder hele bredden */
+        background-color: #ff9000;
+        border: none;
+    }
+
+    .facebooklogo {
+        width: 35px; /* Reducer logo-størrelsen yderligere */
+    }
+
+    .instagramlogo{
+        width: 55px; /* Reducer logo-størrelsen yderligere */
+    }
 }
