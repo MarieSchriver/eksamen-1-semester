@@ -135,6 +135,11 @@ body {
     margin: 0.5rem 0; /* Mellemrum mellem logoerne */
 }
 
+
+
+
+
+/*mobil enhed starter her*/
 @media screen and (max-width: 391px) {
     .logo {
         width: 15rem;
@@ -236,6 +241,7 @@ body {
     img.forsidebillede {
         width: 80%;
         height: auto;
+        margin-top: 4rem;
     }
     
 
@@ -244,12 +250,14 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
+        color: #ff9000;
     }
     
     .tesktforsidetop{
         text-align: justify;
         padding-left: 3rem;
         padding-right: 3rem;
+        color: white;
 
     }
 
@@ -258,6 +266,8 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem; 
+        padding-top: 3rem;
+        color: #ff9000;
     }
 
     .tesktforsidebund{
@@ -265,8 +275,11 @@ body {
         padding-left: 3rem;
         padding-right: 3rem;
         padding-bottom: 3rem;
+        color: white;
     }
 
+
+    
     .kasketbillede{
     width: 50%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -277,6 +290,7 @@ body {
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
+        margin-bottom: 3rem;
     }
 
     .faelleskaberbillede{
@@ -289,12 +303,14 @@ body {
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
+        margin-bottom: 3rem;
     
     }
 
     .lejlokaletbillede{
         width: 50%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        
     }
 
     .lejlokaletbillede-container{
@@ -302,37 +318,43 @@ body {
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
+        margin-bottom: 3rem;
     }
     
 
     .merchlink{
         text-decoration: none;
-        color: black;
+        color: white;
         text-align: center;
         display: flex;
        justify-content: center;
        font-weight: bold;
        font-size: larger;
+       padding-bottom: 3rem;
     }
+
+    
 
     .faellesskaberlink{
         text-decoration: none;
-        color: black;
+        color: white;
         text-align: center;
         display: flex;
        justify-content: center;
        font-weight: bold;
        font-size: larger;
+       padding-bottom: 3rem;
     }
 
     .lejlokaletlink{
         text-decoration: none;
-        color: black;
+        color: white;
         text-align: center;
         display: flex;
        justify-content: center;
        font-weight: bold;
        font-size: larger;
+       padding-bottom: 3rem;
        
     }
 
@@ -354,6 +376,10 @@ body {
         width: 100%; /* Sektionerne fylder hele bredden */
         background-color: #ff9000;
         border: none;
+    }
+
+    .SoMe{
+        font-weight: bold;
     }
 
     .facebooklogo {
