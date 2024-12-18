@@ -456,48 +456,41 @@ body {
 .burger-checkbox:checked + .burger .line:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
 }
- .forsidebillede-container {
-    display: grid; /* Aktiverer CSS Grid */
-    place-items: center; /* Centrerer både vandret og lodret */
-    background-color: #666;
-    border: none;
-    }
-    
-    .imgkasket{
-        width: 50%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
+ 
+.merchbilleder {
+    display: flex;
+    justify-content: center; /* Centrerer alle items i sektionen */
+    align-items: center; /* Justerer lodret alignment */
+    gap: 2rem; /* Afstand mellem hvert merch-item */
+    padding: 5rem 0; /* Tilføjer afstand til sektionen */
+}
 
-    .kasketsection{
-        display: flex;
-        justify-content: center;
-       background-color: #666;
-       border: none;
-    }
+.merch-item {
+    position: relative; /* Gør det muligt at placere tekst absolut over billedet */
+    text-align: center; /* Centrerer tekst i containeren */
+    width: 20rem; /* Fast bredde for hvert merch-item */
+}
 
-    .imgtshirt{
-        width: 50%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
+.merch-text {
+    position: absolute; /* Placer teksten over billedet */
+    top: 50%; /* Centrerer teksten lodret */
+    left: 50%; /* Centrerer teksten horisontalt */
+    transform: translate(-50%, -50%); /* Finjusterer for fuld centrering */
+    font-size: 1.5rem; /* Tilpas tekststørrelsen */
+    color: white; /* Sørg for læsbar tekst */
+    background-color: rgba(0, 0, 0, 0.6); /* Gør teksten synlig over billeder */
+    padding: 0.5rem 1rem; /* Gør teksten tydelig */
+    border-radius: 0.5rem; /* Tilføj lidt bløde hjørner */
+    white-space: nowrap; /* Forhindrer tekst i at bryde til næste linje */
+}
 
-    .tshirtsection{
-        display: flex;
-        justify-content: center;
-        background-color: #666;
-        border: none;
-    }
-
-    .imgøldåse{
-        width: 50%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .ølsection{
-        display: flex;
-        justify-content: center;
-        background-color: #666;
-        border: none;
-    }
+img {
+    display: block; /* Sikrer, at billedet tager korrekt plads */
+    width: 100%; /* Gør billedet fleksibelt og fylder containeren */
+    height: auto; /* Bevarer billedets proportioner */
+    border-radius: 0.5rem; /* Tilføjer bløde hjørner til billeder */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Læg en skygge under billederne */
+}
 
     .merchh1{
         color: #ff9000;
@@ -577,38 +570,48 @@ body {
     margin-right: 5rem;
 }
 
-.merchbilleder{
-    display: flex;
-    justify-content: space-evenly; /* Placerer sektionerne med mellemrum */
-    align-items: row; /* Juster elementerne øverst */
-    gap: 2rem; /* Afstand mellem sektionerne */
-    padding-bottom: 5rem;
-}
-
-.imgkasket{
-    width: 50%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-
-
-.imgtshirt{
-    width: 50%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-
-.imgøldåse{
-    width: 90%;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
 
 .merchh1{
     color: #ff9000;
    text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
     font-size: 4rem;
 }
+
+.merchbilleder {
+    display: flex;
+    justify-content: center; /* Centrerer alle items i sektionen */
+    align-items: center; /* Justerer lodret alignment */
+    gap: 8rem; /* Afstand mellem hvert merch-item */
+    padding: 5rem 0; /* Tilføjer afstand til sektionen */
+}
+
+.merch-item {
+    position: relative; /* Gør det muligt at placere tekst absolut over billedet */
+    text-align: center; /* Centrerer tekst i containeren */
+    width: 20rem; /* Fast bredde for hvert merch-item */
+}
+
+.merch-text {
+    position: absolute; /* Placer teksten over billedet */
+    top: 50%; /* Centrerer teksten lodret */
+    left: 50%; /* Centrerer teksten horisontalt */
+    transform: translate(-50%, -50%); /* Finjusterer for fuld centrering */
+    font-size: 1.5rem; /* Tilpas tekststørrelsen */
+    color: white; /* Sørg for læsbar tekst */
+    padding: 0.5rem 1rem; /* Gør teksten tydelig */
+    border-radius: 0.5rem; /* Tilføj lidt bløde hjørner */
+    white-space: nowrap; /* Forhindrer tekst i at bryde til næste linje */
+   padding-bottom: 25rem;
+}
+
+img {
+    display: block; /* Sikrer, at billedet tager korrekt plads */
+    width: 100%; /* Gør billedet fleksibelt og fylder containeren */
+    height: auto; /* Bevarer billedets proportioner */
+    border-radius: 0.5rem; /* Tilføjer bløde hjørner til billeder */
+}
+
 
 h2 {
     display: flex;
