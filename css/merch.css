@@ -178,10 +178,6 @@ body {
    
 }
 
-nav.navbar{
-    background-color: #5D5D5D;
-}
-
 /* Skjult menu som standard */
 .navbar-menu {
     position: fixed;
@@ -211,10 +207,6 @@ nav.navbar{
     font-size: 1.5rem;
 }
 
-.navbar-menu a:hover {
-    color: #ff6600; /* Orange farve ved hover */
-}
-
 .burger-checkbox:checked ~ .navbar .navbar-menu {
     right: 0; /* Flyt menuen ind i skærmen */
 }
@@ -232,6 +224,7 @@ nav.navbar{
 .burger-checkbox:checked + .burger .line:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
 }
+
 
 .forsidebillede-container {
     display: grid; /* Aktiverer CSS Grid */
@@ -262,14 +255,14 @@ nav.navbar{
     padding-bottom: 2rem;
 }
 
-h2 {
+    h2 {
     display: block;
     text-align: center; /* Centrerer teksten */
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     color: white;   
     font-weight: 0.2rem;
-}
+    }
 
     section.footer{
         background-color: #ff9000;
@@ -576,7 +569,7 @@ h2 {
     padding-top: 2rem;
     color: white;
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 section.footer {
