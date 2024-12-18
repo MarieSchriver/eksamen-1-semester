@@ -7,7 +7,6 @@
 
 body {
     font-family: "Anton", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;    
 }
@@ -263,7 +262,6 @@ body {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
     color: white;   
-    font-weight: 0.2rem;
     }
 
     section.footer{
