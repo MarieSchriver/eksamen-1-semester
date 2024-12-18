@@ -135,6 +135,9 @@ body {
     margin: 0.5rem 0; /* Mellemrum mellem logoerne */
 }
 
+
+
+
 @media screen and (max-width: 391px){
 
     .logo {
@@ -234,19 +237,17 @@ body {
 }
 
 .kasketsection, .tshirtsection, .ølsection {
-    display: flex;
-    justify-content: center; /* Centrerer indholdet vandret */
-    align-items: center; /* Centrerer indholdet lodret */
-    background-color: #585858; /* Forskellige baggrundsfarver for hver sektion */
+    display: flex; /* Brug flexbox */
+    justify-content: center; /* Centrerer indhold vandret */
+    align-items: center; /* Centrerer indhold lodret */
+    background-color: #585858; /* Baggrundsfarve */
+    padding: 2rem; /* Luft omkring billederne */
     border: none;
-    padding: 2rem; /* Tilføj lidt padding for at give plads omkring billederne */
 }
 
 .imgkasket, .imgtshirt, .imgøldåse {
-    width: 50%; /* Gør billederne mindre for at passe bedre på skærmen */
-    max-width: 400px; /* Sætter en maksimal bredde på billederne */
-    height: auto; /* Bevarer billedets proportioner */
-    display: flex;
+    max-width: 100%; /* Sikrer, at billedet ikke overskrider containerens bredde */
+    height: auto; /* Bevarer proportionerne */
 }
 
 .merchh1 {
