@@ -277,7 +277,6 @@ body {
         color: white;
     }
 
-
     
     .kasketbillede{
     width: 50%;
@@ -320,7 +319,17 @@ body {
         margin-bottom: 3rem;
     }
     
+    .merchlink:hover {
+        color: #ff9000;
+    }
 
+    .faellesskaberlink:hover {
+        color: #ff9000;
+    }
+
+    .lejlokaletlink:hover {
+        color: #ff9000;
+    }
     .merchlink{
         text-decoration: none;
         color: white;

@@ -246,6 +246,7 @@ body {
     width: 50%; /* Gør billederne mindre for at passe bedre på skærmen */
     max-width: 400px; /* Sætter en maksimal bredde på billederne */
     height: auto; /* Bevarer billedets proportioner */
+    display: flex;
 }
 
 .merchh1 {
