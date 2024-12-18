@@ -423,6 +423,32 @@ h2{
     padding-bottom: 4rem;
 }
 
+.center-container {
+    display: flex; 
+    justify-content: center;/* Centrerer knappen horisontalt */
+    align-items: center;/* Centrerer knappen vertikalt */
+    height: auto;/* Sætter containerens højde til 100% af viewportens højde */
+    margin-bottom: 5rem;
+}
+
+/* Styling af tilmeld-knap */
+.tilmeld-knap {
+    background-color: #FF9000; /* Farven på knappen */
+    color: white; /* Hvid tekst */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-effekt på knappen */
+.tilmeld-knap:hover {
+    background-color: #e67e00; /* Mørkere nuance ved hover */
+}
+
 
 section.footer {
     background-color: #ff9000;
