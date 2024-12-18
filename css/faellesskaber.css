@@ -1,10 +1,106 @@
-
-
-/* Nulstil margener og padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Anton", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+.header-container {
+    display: flex; /* Arranger logo og menu på linje */
+    justify-content: space-between; /* Logo til venstre, menu til højre */
+    align-items: center; /* Centrer lodret */
+    padding: 1rem 2rem; /* Giver lidt luft omkring elementerne */
+    background-color: #666; /* Headerens baggrundsfarve */
+}
+
+/* Styling for logo */
+.logo {
+    width: 50rem;
+    height: auto;
+}
+
+/* Styling for navbar */
+.navbar {
+    display: none; /* Skjules som standard (til små skærme) */
+}
+
+.navbar-menu {
+    list-style: none; /* Fjern bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu punkter */
+.navbar-menu li {
+    margin-bottom: 1rem;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #ff9000;
+}
+
+/* Burger-menu styling */
+.burger-checkbox {
+    display: none; /* Skjul checkboxen */
+}
+
+.burger {
+    display: flex; /* Synlig som standard på små skærme */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ff9000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-checkbox:checked + .burger .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+/* Synliggør menuen ved burger-checkbox */
+.burger-checkbox:checked ~ .navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #666;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    z-index: 999;
 }
 
 /* Generel footerbox styling */
@@ -164,79 +260,36 @@ h2{
 }
 
 
-.footer{
-    display: grid; /* Aktiverer CSS Grid */
-    place-items: center; /* Centrerer både vandret og lodret */
-    background-color: #666;
+section.footer{
+    background-color: #ff9000;
     border: none;
 }
 
-.adresse{
-    display: grid; /* Aktiverer CSS Grid */
-    place-items: center; /* Centrerer både vandret og lodret */
-    background-color: #666;
+.footerbox {
+    padding: 0.5rem; /* Mindre padding på meget små skærme */
+    gap: 1rem; /* Reducer afstand mellem sektioner */
+    background-color: #ff9000;
     border: none;
-    color: white;
-    font-weight: bold;
-    width: 80%; /* Sektionen fylder kun 50% af bredden */
-    height: 30%; /* Tilpas højden efter indholdet */
 }
 
-.åbningstider{
-    display: grid; /* Aktiverer CSS Grid */
-    place-items: center; /* Centrerer både vandret og lodret */
-    background-color: #666;
+.adresse, .åbningstider, .SoMe {
+    font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
+    line-height:2rem;
+    width: 100%; /* Sektionerne fylder hele bredden */
+    background-color: #ff9000;
     border: none;
-    color: white;
-    font-weight: bold;
-    
 }
 
 .SoMe{
-    display: grid; /* Aktiverer CSS Grid */
-    place-items: center; /* Centrerer både vandret og lodret */
-    justify-content: center;
-    background-color: #666;
-    border: none;
-    color: white;
     font-weight: bold;
-    width: 50%; /* Sektionen fylder kun 50% af bredden */
-    height: auto; /* Tilpas højden efter indholdet */
-    
 }
 
-section.adresse{
-    padding-left: 6rem;
-    line-height: 1.5rem;
-}
-
-section.SoMe {
-    padding-left: 8rem;
-}
-
-section.åbningstider{
-padding-left: 8rem;
-line-height: 1.5rem;
-}
-
-.footerbox{
-    display: grid; /* Aktiverer CSS Grid */
-    place-items: center; /* Centrerer både vandret og lodret */
-    justify-content: center;
-    background-color: #666;
-    border: none; 
-    color: white;
+.facebooklogo {
+    width: 35px; /* Reducer logo-størrelsen yderligere */
 }
 
 .instagramlogo{
-    width: 75%;
-    height: auto;
-}
-
-.facebooklogo{
-    width: 55%;
-    height: auto;
-    padding-top: 2rem;
+    width: 55px; /* Reducer logo-størrelsen yderligere */
 }
 }
 
@@ -371,220 +424,196 @@ h2{
 }
 
 
+section.footer {
+    background-color: #ff9000;
+    border: none;
+    color: white;
+}
 
-    
+.footerbox {
+    padding: 0.5rem; /* Mindre padding på meget små skærme */
+    gap: 1rem; /* Reducer afstand mellem sektioner */
+    background-color: #ff9000;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
 
-    section.footer{
-        background-color: #ff9000;
-        border: none;
-        color: white;
-    }
+.adresse, .åbningstider, .SoMe {
+    font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
+    line-height: 2rem;
+    width: 100%; /* Sektionerne fylder hele bredden */
+    background-color: #ff9000;
+    border: none;
+    flex: 1; /* Hvert element fylder lige meget plads */
+    margin: 0 10px; /* Valgfri afstand mellem elementerne */
+    text-align: center; /* Centrer teksten i elementerne */
+    padding: 10px; /* Gør elementerne mere tydelige */
+}
 
-    .footerbox {
-        padding: 0.5rem; /* Mindre padding på meget små skærme */
-        gap: 1rem; /* Reducer afstand mellem sektioner */
-        background-color: #ff9000;
-        border: none;
-        color: white !important;
-    }
+.SoMe{
+    font-weight: bold;
+}
 
-    .adresse, .åbningstider, .SoMe {
-        font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
-        line-height:2rem;
-        width: 100%; /* Sektionerne fylder hele bredden */
-        background-color: #ff9000;
-        border: none;
-    }
+.facebooklogo {
+    width: 35px; /* Reducer logo-størrelsen yderligere */
+}
 
-    .facebooklogo {
-        width: 35px; /* Reducer logo-størrelsen yderligere */
-    }
-
-    .instagramlogo{
-        width: 55px; /* Reducer logo-størrelsen yderligere */
-    }
+.instagramlogo {
+    width: 55px; /* Reducer logo-størrelsen yderligere */
+}
 }
 
 @media screen and (min-width: 1025px) {
-        /* CSS regler for computer */
+       /* Generelle indstillinger */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #666;
+}
 
-        .logo {
-            width: 25rem;
-            height: auto;
-        }
-    
-        /* Generelle indstillinger */
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #666;
-    }
-    
-    /* Skjul checkboxen */
-    .burger-checkbox {
-        display: none;
-    }
-    
-    /* Styling af burgerikon */
-    .burger {
-        position: fixed;
-        top: 3rem;
-        right: 20px; /* Placeres i højre side */
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        z-index: 1000;
-    }
-    
-    .burger .line {
-        width: 120%;
-        height: 5px;
-        background-color: #ff9000;
-        border-radius: 2px;
-        transition: all 0.3s ease;
-       
-    }
-    
-    /* Skjult menu som standard */
-    .navbar-menu {
-        position: fixed;
-        top: 0;
-        right: -100%; /* Skjules uden for skærmen */
-        width: 200px;
-        height: 100vh;
-        background-color: #666;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: right 0.3s ease;
-        z-index: 999;
-        list-style: none;
-        padding: 0;
-    }
-    
-    /* Menu punkter */
-    .navbar-menu li {
-        margin: 20px 0;
-    }
-    
-    .navbar-menu li a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.5rem;
-    }
-    
-    .burger-checkbox:checked ~ .navbar .navbar-menu {
-        right: 0; /* Flyt menuen ind i skærmen */
-    }
-    
-    
-    /* Burger-animation ved åbning */
-    .burger-checkbox:checked + .burger .line:nth-child(1) {
-        transform: rotate(45deg) translateY(10px);
-    }
-    
-    .burger-checkbox:checked + .burger .line:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .burger-checkbox:checked + .burger .line:nth-child(3) {
-        transform: rotate(-45deg) translateY(-10px);
-    }
-    
-    h1{
-        text-align: center;
-        color: #ff9000;
-        padding-bottom: 3rem
-    }
-    
-    h2{
-        text-align: center;
-        color: white;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-    }
-    
-    .kvinde{
-        text-align: justify;
-        color: white;
-        padding: 3rem;
-    }
-    
-    .mand{
-        text-align: justify;
-        color: white;
-        padding: 3rem; 
-    }
-    
-    .girls{
-        text-align: justify;
-        color: white;
-        padding: 3rem;
-    }
-    
-    .unge{
-        text-align: justify;
-        color: white;
-        padding: 3rem;
-        padding-bottom: 4rem;
-    }
-    
-    
-    .center-container {
-        display: flex; /* Brug flexbox */
-        justify-content: center; /* Centrerer knappen horisontalt */
-        align-items: center; /* Centrerer knappen vertikalt */
-        height: 100vh; /* Sætter containeren til at fylde hele skærmens højde */
-        margin: 0; /* Fjern marginen */
-    }
-    
-    .tilmeld-knap {
-        background-color: #FF9000; /* Farven på knappen */
-        color: white; /* Hvid tekst */
-        font-size: 1rem; /* Skift gerne fontstørrelsen efter behov */
-        font-weight: bold;
-        padding: 10px 20px; /* Tilføj lidt polstring for at gøre knappen større */
-        border: none; /* Fjern standard kant */
-        border-radius: 5px; /* Runde hjørner */
-        cursor: pointer; /* Ændrer cursoren til en hånd, når man hover over knappen */
-        transition: background-color 0.3s ease; /* Tilføj en overgangseffekt ved hover */
-    }
-    
-    .tilmeld-knap:hover {
-        background-color: #e67e00; /* Mørkere nuance, når man hover over knappen */
-    }
-        section.footer{
-            background-color: #ff9000;
-            border: none;
-            color: white;
-        }
-    
-        .footerbox {
-            padding: 0.5rem; /* Mindre padding på meget små skærme */
-            gap: 1rem; /* Reducer afstand mellem sektioner */
-            background-color: #ff9000;
-            border: none;
-            color: white !important;
-        }
-    
-        .adresse, .åbningstider, .SoMe {
-            font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
-            line-height:2rem;
-            width: 100%; /* Sektionerne fylder hele bredden */
-            background-color: #ff9000;
-            border: none;
-        }
-    
-        .facebooklogo {
-            width: 35px; /* Reducer logo-størrelsen yderligere */
-        }
-    
-        .instagramlogo{
-            width: 55px; /* Reducer logo-størrelsen yderligere */
-        }
+.logo {
+    width: 50rem;
+    height: auto;
+}
+
+/* Generelle indstillinger */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #666;
+}
+
+.burger {
+    display: none; /* Skjul burgerikonet */
+}
+
+.navbar {
+    display: flex; /* Vis navbar som standard */
+    flex-direction: column; /* Lodret layout */
+    align-items: flex-end; /* Juster til højre */
+}
+
+.navbar-menu {
+    display: block; /* Standard menuvisning */
+}
+
+.navbar-menu li a {
+    font-size: 3rem; /* Forøg skriftstørrelsen */
+    margin-right: 5rem;
+}
+
+/* Titel */
+h1 {
+    text-align: center;
+    color: #ff9000;
+    padding-bottom: 3rem;
+}
+
+/* H2 - Justering af overskrifter */
+h2 {
+    text-align: center;
+    color: white;
+    padding-top: 2rem; /* Afstand over overskriften */
+    padding-bottom: 1rem; /* Afstand under overskriften */
+    margin-top: 0; /* Fjern unødvendig margin på toppen */
+}
+
+/* Tekstafsnit */
+.kvinde, .mand, .girls, .unge {
+    text-align: justify;
+    color: white;
+    padding: 3rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+/* Afstand mellem sektioner */
+.kvinde {
+    padding-bottom: 3rem;
+}
+
+.mand {
+    padding-bottom: 3rem;
+}
+
+.girls {
+    padding-bottom: 3rem;
+}
+
+.unge {
+    padding-bottom: 4rem; /* Afstand til næste sektion */
+}
+
+.center-container {
+    display: flex; 
+    justify-content: center;/* Centrerer knappen horisontalt */
+    align-items: center;/* Centrerer knappen vertikalt */
+    height: auto;/* Sætter containerens højde til 100% af viewportens højde */
+    margin-bottom: 5rem;
+}
+
+/* Styling af tilmeld-knap */
+.tilmeld-knap {
+    background-color: #FF9000; /* Farven på knappen */
+    color: white; /* Hvid tekst */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-effekt på knappen */
+.tilmeld-knap:hover {
+    background-color: #e67e00; /* Mørkere nuance ved hover */
+}
+
+/* Footer */
+section.footer {
+    background-color: #ff9000;
+    border: none;
+    color: white;
+}
+
+.footerbox {
+    padding: 0.5rem;
+    gap: 1rem;
+    background-color: #ff9000;
+    border: none;
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer tekst sektioner */
+.adresse, .åbningstider, .SoMe {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    width: 100%;
+    background-color: #ff9000;
+    border: none;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 8rem;
+}
+
+/* Sociale medier */
+.SoMe {
+    font-weight: bold;
+}
+
+.facebooklogo {
+    width: 35px;
+}
+
+.instagramlogo {
+    width: 55px;
+}
+
 }
