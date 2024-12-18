@@ -233,134 +233,74 @@ nav.navbar{
     transform: rotate(-45deg) translateY(-10px);
 }
 
- .forsidebillede-container {
+.forsidebillede-container {
     display: grid; /* Aktiverer CSS Grid */
     place-items: center; /* Centrerer både vandret og lodret */
     background-color: #565656;
     border: none;
-    }
-    
-    .imgkasket{
-        width: 50%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
+}
 
-    .kasketsection{
-        display: flex;
-        justify-content: center;
-       background-color: #585858;
-       border: none;
-    }
+.kasketsection, .tshirtsection, .ølsection {
+    display: flex;
+    justify-content: center; /* Centrerer indholdet vandret */
+    align-items: center; /* Centrerer indholdet lodret */
+    background-color: #585858; /* Forskellige baggrundsfarver for hver sektion */
+    border: none;
+    padding: 2rem; /* Tilføj lidt padding for at give plads omkring billederne */
+}
 
-    .imgtshirt{
-        width: 50%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
+.imgkasket, .imgtshirt, .imgøldåse {
+    width: 50%; /* Gør billederne mindre for at passe bedre på skærmen */
+    max-width: 400px; /* Sætter en maksimal bredde på billederne */
+    height: auto; /* Bevarer billedets proportioner */
+}
 
-    .tshirtsection{
-        display: flex;
-        justify-content: center;
-        background-color: #4B4B4B;
+.merchh1 {
+    color: #ff9000;
+    text-align: center;
+    font-size: 3rem; /* Forstør tekststørrelsen for bedre læsbarhed */
+    padding-bottom: 2rem;
+}
+
+h2 {
+    display: block;
+    text-align: center; /* Centrerer teksten */
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    color: white;   
+    font-weight: 0.2rem;
+}
+
+    section.footer{
+        background-color: #ff9000;
         border: none;
     }
 
-    .imgøldåse{
-        width: 50%;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .ølsection{
-        display: flex;
-        justify-content: center;
-        background-color: #3D3D3D;
+    .footerbox {
+        padding: 0.5rem; /* Mindre padding på meget små skærme */
+        gap: 1rem; /* Reducer afstand mellem sektioner */
+        background-color: #ff9000;
         border: none;
     }
 
-    .merchh1{
-        color: #ff9000;
-       text-align: center;
-
-    }
-
-    h2{
-        display: flex;
-        justify-content: center;
-        padding-top:2rem ;
-    }
-
-    .footer{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
+    .adresse, .åbningstider, .SoMe {
+        font-size: 1.1rem; /* Endnu mindre tekst for små enheder */
+        line-height:2rem;
+        width: 100%; /* Sektionerne fylder hele bredden */
+        background-color: #ff9000;
         border: none;
-    }
-
-    .adresse{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
-        border: none;
-        color: white;
-        font-weight: bold;
-        width: 80%; /* Sektionen fylder kun 50% af bredden */
-        height: 30%; /* Tilpas højden efter indholdet */
-    }
-
-    .åbningstider{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        background-color: #666;
-        border: none;
-        color: white;
-        font-weight: bold;
-        
     }
 
     .SoMe{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        justify-content: center;
-        background-color: #666;
-        border: none;
-        color: white;
         font-weight: bold;
-        width: 50%; /* Sektionen fylder kun 50% af bredden */
-        height: auto; /* Tilpas højden efter indholdet */
-        
     }
 
-    section.adresse{
-        padding-left: 6rem;
-        line-height: 1.5rem;
-    }
-
-    section.SoMe {
-        padding-left: 8rem;
-    }
-
-section.åbningstider{
-    padding-left: 8rem;
-    line-height: 1.5rem;
-}
-
-    .footerbox{
-        display: grid; /* Aktiverer CSS Grid */
-        place-items: center; /* Centrerer både vandret og lodret */
-        justify-content: center;
-        background-color: #666;
-        border: none; 
-        color: white;
+    .facebooklogo {
+        width: 35px; /* Reducer logo-størrelsen yderligere */
     }
 
     .instagramlogo{
-        width: 75%;
-        height: auto;
-    }
-
-    .facebooklogo{
-        width: 55%;
-        height: auto;
-        padding-top: 2rem;
+        width: 55px; /* Reducer logo-størrelsen yderligere */
     }
 }
 
