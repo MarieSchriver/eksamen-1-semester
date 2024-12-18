@@ -647,6 +647,7 @@ body {
         display: flex; /* Aktivér flex layout */
         align-items: center; /* Juster lodret */
         gap: 0.5rem; /* Afstand mellem elementerne */
+        margin-top: -10rem;
     }
 
     .forsidebillede-container {
@@ -727,13 +728,7 @@ body {
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
 
-    /* Links */
-    .linksforside {
-        display: flex; /* Sørger for at linksene står på en række */
-        justify-content: space-between; /* Placerer linkene med lige afstand */
-        gap: 2rem; /* Afstand mellem linkene */
-        text-align: center; /* Centrerer teksten i containeren */
-    }
+    
 
     .merchlink,
     .faellesskaberlink,
@@ -743,6 +738,20 @@ body {
         font-weight: bold;
         font-size: 1.5rem;
         margin-bottom: 0; /* Fjern margin-bottom */
+        padding-bottom: 4rem;
+    }
+
+    
+    .lejlokaletlink:hover{
+        color: #ff9000;
+    }
+
+    .faellesskaberlink:hover{
+        color: #ff9000;
+    }
+
+    .merchlink:hover{
+        color: #ff9000;
     }
 
     .kasketbillede {
@@ -767,6 +776,7 @@ body {
         place-items: center; /* Centrerer både vandret og lodret */
         background-color: #666;
         border: none;
+        margin-bottom: 4rem;
     }
 
     .lejlokaletbillede {
@@ -808,6 +818,10 @@ body {
         text-align: center; /* Centrer teksten i elementerne */
         padding: 10px; /* Gør elementerne mere tydelige */
         padding-left: 8rem;
+    }
+
+    .SoMe{
+        font-weight: bold;
     }
 
     .facebooklogo {
