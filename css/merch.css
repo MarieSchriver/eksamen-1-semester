@@ -490,6 +490,9 @@ section.footer {
 }
 }
 
+
+
+
 @media screen and (min-width: 1025px) {
  /* CSS regler for computer */
     
@@ -543,7 +546,7 @@ body {
 .merch-item {
     position: relative; /* Gør det muligt at placere tekst absolut over billedet */
     text-align: center; /* Centrerer tekst i containeren */
-    width: 20rem; /* Fast bredde for hvert merch-item */
+    width: 50%; /* Fast bredde for hvert merch-item */
 }
 
 .merch-text {
